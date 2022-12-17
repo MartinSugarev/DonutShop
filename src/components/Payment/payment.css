@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background: #FF86B3;
+}
+
+.payment-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    padding: 20vh 5vw; 
+    background-image: url('/src/images/sky_shaped.svg'), url('/src/images/unicorn_dust.svg');
+    background-size: clamp(7rem, 15vw, 15rem), clamp(10rem, 20vw, 25rem);
+    background-repeat: no-repeat, no-repeat;
+    background-position: -50px 90%, 110% 110%;
+}
+
+
+.button-container{
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FF86B3;
+    gap: 30px;
+    
+    
+}
+
+.payment-title{
+    color: red;
+}
+
+ .payment-container p:nth-child(2){
+    align-self: flex-end;
+    font-size: clamp(2rem, 10vw ,13rem);
+
+} 

@@ -1,21 +1,18 @@
-import "./App.css";
+import React, {memo} from 'react'
+import {Routes, Route} from 'react-router-dom'
+import StartScreen from './components/StartScreen/StartScreen';
+import Menu from './components/Menu/Menu';
+import Payment from './components/Payment/Payment';
+import Preparation from './components/Preparation/Preparation';
+import Ready from './components/Ready/Ready'
 
 function App() {
   return (
-    <div className="App">
-      <section class="hero">
-        <div class="hero-body">
-          <p class="title">A React Task</p>
-          <p class="subtitle">by Boom.dev</p>
-        </div>
-      </section>
-      <div class="container is-fullhd">
-        <div class="notification">
-          Edit the <code>./src</code> folder to add components.
-        </div>
-      </div>
-    </div>
+    <Routes>
+       <Route path="/" element={<StartScreen />} />
+       <Route path="/menu" element={<Menu/>} />
+    </Routes>
   );
 }
 
-export default App;
+export default memo(App);

@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@900&display=swap'); 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background: #FFE84A;
+}
+
+.preparation-container{
+    height: 100vh;
+    width: 100vw;
+    padding: 5vh 0 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+
+.preparation-img-container{
+    width: 100%;
+    max-width: 500px;
+    height: 60%;
+    max-width: 500px;
+    background-image: url('/src/images/sparkles.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 90%;
+  
+}
+
+.preparation-img-container > img{
+    width: 100%;
+    height: 80%;
+    object-fit: contain;
+}
+
+.preparation-container > p {
+    align-items: center;
+   font-size: clamp(2.5rem, 8vw ,13rem);
+   font-family: 'Outfit', sans-serif;
+   font-weight: bolder;
+   background: transparent;
+   color: #ffffff;
+   text-transform: capitalize;
+}

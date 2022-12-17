@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.donut-container{
+    width: 90%;
+    max-width: 500px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+
+}
+
+.donut-container:hover{
+    cursor: pointer;
+}
+
+.donut-name-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.donut-name-container > p {
+    text-align: right;
+    font-size: clamp(2rem, 4vw ,10rem);
+    font-family: 'Outfit', sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: .8;
+}
+.donut-img-container{
+    width: 50%;
+    max-width: 90px;
+    height: 100%;
+    max-height: 90px;
+}
