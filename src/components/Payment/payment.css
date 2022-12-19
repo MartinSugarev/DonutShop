@@ -12,6 +12,7 @@ html, body{
 
 
 .payment-container{
+    position: relative;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -19,12 +20,13 @@ html, body{
     align-items: center;
     justify-content: flex-start;
     gap: 50px;
-    padding: 20vh 5vw; 
+    padding: 17vh 5vw; 
     background: var(--pink);
-    background-image: url('/src/images/sky_shaped.svg'), url('/src/images/unicorn_dust.svg');
+    overflow: hidden;
+    /* background-image: url('/src/images/sky_shaped.svg'), url('/src/images/unicorn_dust.svg');
     background-size: clamp(7rem, 15vw, 15rem), clamp(10rem, 20vw, 25rem);
     background-repeat: no-repeat, no-repeat;
-    background-position: -50px 90%, 110% 110%;
+    background-position: -50px 90%, 110% 110%; */
 }
 
 
@@ -45,3 +47,25 @@ html, body{
     font-size: clamp(2rem, 10vw ,13rem);
 
 } 
+
+.payment-sky-shaped{
+    position: absolute;
+    width: 45vw;
+    height: 45vw;
+    max-width: 250px;
+    max-height: 250px;
+    bottom: 7%;
+    left: -5rem;
+    filter: drop-shadow(0 15px 10px rgba(0,0,0,0.35));
+}
+
+.payment-unicorn-dust{
+    position: absolute;
+    width: 45vw;
+    height: 45vw;
+    max-width: 250px;
+    max-height: 250px;
+    bottom: -4rem;
+    right: -4rem;
+    filter: drop-shadow(0 15px 10px rgba(0,0,0,0.35));
+}

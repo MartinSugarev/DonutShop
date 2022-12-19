@@ -28,7 +28,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 90%;
-    filter: drop-shadow(0 10px 10px var(--shadow));
+    filter: drop-shadow(0 10px 10px rgba(0,0,0,0.35));
   
 }
 

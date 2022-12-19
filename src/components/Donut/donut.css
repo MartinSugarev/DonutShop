@@ -39,7 +39,7 @@
     max-width: 90px;
     height: 100%;
     max-height: 90px;
-    filter: drop-shadow(0 5px 5px var(--shadow));
+    filter: drop-shadow(0 5px 5px rgba(0,0,0,0.35));
 }
 
 .donut-img{   

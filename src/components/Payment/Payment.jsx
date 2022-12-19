@@ -22,6 +22,8 @@ const Payment = () => {
                <Button img={'/apple-pay.png'} handleClick={handlePaymentClick}/>
                <Button img={'/google-pay.png'} handleClick={handlePaymentClick}/>
             </div>
+            <img className="payment-sky-shaped" src="/sky_shaped.svg" alt="sky_shaped" />
+            <img className="payment-unicorn-dust" src="/unicorn_dust.svg" alt="unicorn_dust" />
         </section>
     )
 }

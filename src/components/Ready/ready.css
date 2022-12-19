@@ -24,20 +24,20 @@ html, body{
     bottom: 0;
     left: 0;
     background: transparent;
-    padding: 5vh 5vw 20vh;
+    padding: 5vh 5vw 10vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     gap: 30px;
-
+    overflow-y: auto;
 }
 .ready-img-container{
     width: 100%;
     max-width: 500px;
     height: 60%;
     max-width: 500px;
-    filter: drop-shadow(0 10px 10px var(--shadow));
+    filter: drop-shadow(0 15px 15px rgba(0,0,0,0.35));
 
 }
 .ready-img-container > img{
@@ -61,11 +61,11 @@ html, body{
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    font-size: clamp(1.8rem, 5vw ,13rem);
+    font-size: clamp(1.8rem, 5vw , 9rem);
     font-family: 'Outfit', sans-serif;
     background: transparent;
     color: var(--white);
-    
+    gap: 10px;
 }
 
 .ready-text-container > p{
