@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-html{
+html, body{
     background: #FFE84A;
 }
 
@@ -33,10 +33,20 @@ html{
   
 }
 
-.preparation-img-container > img{
+.preparation-img{
     width: 100%;
     height: 80%;
     object-fit: contain;
+    animation: donutRotate 10s linear  infinite ;
+}
+
+@keyframes donutRotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
 
 .preparation-container > p {

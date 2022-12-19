@@ -4,9 +4,10 @@
     box-sizing: border-box;
 }
 
-html{
-    background: #FF86B3;
+html, body{
+    background-color: #FF86B3;
 }
+
 
 .payment-container{
     width: 100vw;
@@ -17,6 +18,7 @@ html{
     justify-content: flex-start;
     gap: 50px;
     padding: 20vh 5vw; 
+    background: #FF86B3;
     background-image: url('/src/images/sky_shaped.svg'), url('/src/images/unicorn_dust.svg');
     background-size: clamp(7rem, 15vw, 15rem), clamp(10rem, 20vw, 25rem);
     background-repeat: no-repeat, no-repeat;

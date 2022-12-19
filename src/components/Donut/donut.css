@@ -37,3 +37,17 @@
     height: 100%;
     max-height: 90px;
 }
+
+.donut-img{   
+           animation: donutRotate 10s linear  infinite ;
+    }
+
+
+@keyframes donutRotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

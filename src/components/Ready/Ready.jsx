@@ -1,8 +1,17 @@
 import './ready.css';
 import React, {memo} from 'react';
+import {useNavigate} from 'react-router-dom'
 import Button from '../Button/Button'
 
+
 const Ready = () => {
+
+    const navigate = useNavigate()
+
+    const handleReadyClick = () => {
+        navigate('/')
+    }
+
     return (
         <>
         <div className="ready-inner-background"></div>
@@ -16,7 +25,7 @@ const Ready = () => {
                <p>and pick up</p>
                <p>your amazing Donut!</p>
             </div>
-            <Button title={"done"} />
+            <Button title={"done"} handleClick={handleReadyClick} />
         </div>    
         </section>
         </>
