@@ -18,7 +18,9 @@ const StartScreen = () => {
     return (
         <main>
             <div className="startScreen-container"></div>
+            <img className="startScreen-unicorn-dust" src="/unicorn_dust.svg" alt="unicorn_dust"/>
                 <div className="startScreen-container-inner">
+                  <img className="startScreen-true-blood" src="/true_blood.svg" alt="true_blood"/>
                   <Title firstLine={'the'} secondLine={'donut'} thirdLine={'shop'} />
                   <Button handleClick={handleClick} img={''} title={'start'} />
                 </div>

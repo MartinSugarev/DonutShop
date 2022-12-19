@@ -1,16 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@900&display=swap'); 
-
+@import '../../App.css';
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html, body{
-    background: #FFE84A;
-}
 
 .preparation-container{
+    background: var(--yellow);
     height: 100vh;
     width: 100vw;
     padding: 5vh 0 20vh;
@@ -30,6 +28,7 @@ html, body{
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 90%;
+    filter: drop-shadow(0 10px 10px var(--shadow));
   
 }
 
@@ -39,6 +38,7 @@ html, body{
     object-fit: contain;
     animation: donutRotate 10s linear  infinite ;
 }
+
 
 @keyframes donutRotate{
     from{
@@ -55,6 +55,6 @@ html, body{
    font-family: 'Outfit', sans-serif;
    font-weight: bolder;
    background: transparent;
-   color: #ffffff;
+   color: var(--white);
    text-transform: capitalize;
 }
